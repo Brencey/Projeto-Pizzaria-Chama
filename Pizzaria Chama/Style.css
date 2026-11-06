@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    display: flex;
+    width: 90px;
+    overflow: hidden;
+    height: 60px;
+    align-items: center;
+}
+
+.imglogo{
+    width: auto;
+    height: 90px;
+}
+
+.carrossel{
+    display: flex;
+    width: 94%;
+    margin: auto;
+    align-items: center;
+}
+
+.imgcontainer{
+    height: 400px;
+    object-fit:fill;
+}
+
+.pizza-card {
+    transition: all 0.3s ease;
+}
+
+.pizza-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .nav_bar {
+        padding: 1rem;
+    }
+    
+    .cadrastro_nav {
+        display: none;
+    }
+}
