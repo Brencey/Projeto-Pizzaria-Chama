@@ -15,9 +15,10 @@ body {
 .logo{
     display: flex;
     width: 90px;
-    overflow: hidden;
+    overflow-y:100%;
     height: 60px;
     align-items: center;
+    margin-right:  clamp(2%, 110vw, 3%);
 }
 
 .imglogo{
@@ -35,6 +36,18 @@ body {
 .imgcontainer{
     height: 400px;
     object-fit:fill;
+    width: 100%;
+}
+
+@media (min-width: 1600px) {
+    .carrossel {
+        width: 80%;
+        margin: auto;
+    }
+
+    .imgcontainer {
+        height: 500px;
+    }
 }
 
 .pizza-card {
